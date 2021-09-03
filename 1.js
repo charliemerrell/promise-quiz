@@ -1,5 +1,3 @@
-const fetch = require('node-fetch');
+const fetch = require("node-fetch");
 
-fetch('https://www.multiverse.io/en-GB').then(console.log)
-
-
+fetch("https://www.multiverse.io/en-GB").then(console.log);
