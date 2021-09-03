@@ -1,12 +1,10 @@
-const fetch = require('node-fetch');
+const { readFile } = require("fs/promises");
 
-async function fetchAndPrint() {
-    const response = await fetch('https://www.multiverse.io/en-GB');
+async function readAndPrint() {
+    const response = await readFile("./animal.txt", { encoding: "utf-8" });
     console.log(response);
-    console.log('hello');
+    console.log("hello");
 }
 
-fetchAndPrint();
-console.log('goodbye');
-
-
+readAndPrint();
+console.log("goodbye");

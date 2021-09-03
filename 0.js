@@ -1,3 +1,2 @@
-const fetch = require("node-fetch");
-
-console.log(fetch("https://www.multiverse.io/en-GB"));
+const { readFile } = require("fs/promises");
+console.log(readFile("./animal.txt"));

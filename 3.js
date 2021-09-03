@@ -1,6 +1,5 @@
-const fetch = require('node-fetch');
+const { readFile } = require("fs/promises");
 
-console.log('hello');
-fetch('https://www.multiverse.io/en-GB').then(console.log);
-console.log('goodbye');
-
+console.log("hello");
+readFile("./animal.txt", { encoding: "utf-8" }).then(console.log);
+console.log("goodbye");

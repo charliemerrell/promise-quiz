@@ -1,10 +1,9 @@
-const fetch = require('node-fetch');
+const { readFile } = require("fs/promises");
 
-async function fetchMultiverse() {
-    const response = await fetch('https://www.multiverse.io/en-GB');
+async function readAnimal() {
+    const response = await readFile("./animal.txt", { encoding: "utf-8" });
     return response;
 }
 
 // complete this line
-fetchMultiverse().then(console.log)
-
+readAnimal().then(console.log);
