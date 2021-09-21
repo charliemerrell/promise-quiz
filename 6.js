@@ -5,5 +5,4 @@ async function readAnimal() {
     return response;
 }
 
-// complete this line
 readAnimal().then(console.log);
